@@ -110,10 +110,10 @@ WSGI_APPLICATION = 'lettfaktura.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'myprojectuser',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'NAME': 'bsrqxcxh',
+        'USER': 'bsrqxcxh',
+        'PASSWORD': '6si7W3UGxgTdurCfd6RA0TMCBn2l2jqS',
+        'HOST': 'postgres://bsrqxcxh:6si7W3UGxgTdurCfd6RA0TMCBn2l2jqS@bubble.db.elephantsql.com/bsrqxcxh',
         'PORT': '',
     }
 }

@@ -7,7 +7,9 @@
       "config": { "pythonVersion": "3.11.2" }
     },
     {
-      "src": "build_files.sh"
+      "src": "build_files.sh",
+      "use": "@vercel/python",
+      "config": { "pythonVersion": "3.11.2" }
     }
   ],
   "routes": [

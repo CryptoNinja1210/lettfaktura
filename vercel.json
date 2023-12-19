@@ -4,7 +4,7 @@
     {
       "src": "lettfaktura/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.2" }
+      "config": { "runtime": "python3.11.2" }
     },
     {
       "src": "build_files.sh",

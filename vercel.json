@@ -23,5 +23,6 @@
       "src": "/(.*)",
       "dest": "lettfaktura/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "staticfiles_build"
 }

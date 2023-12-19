@@ -48,7 +48,8 @@ CORS_ALLOWED_ORIGINS = [
     "127.0.0.1",
     ".vercel.app",
     ".now.sh",
-    "lettfaktura-two.vercel.app"
+    "https://lettfaktura-two.vercel.app",
+    'https://lettfaktura-cryptoninja1210.vercel.app'
 ]
 
 CORS_ALLOW_METHODS = (

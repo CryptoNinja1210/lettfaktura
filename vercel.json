@@ -7,11 +7,7 @@
       "config": { "pythonVersion": "3.11.2" }
     },
     {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles"
-      }
+      "src": "build_files.sh"
     }
   ],
   "routes": [
@@ -19,8 +15,5 @@
       "src": "/(.*)",
       "dest": "lettfaktura/wsgi.py"
     }
-  ],
-  "env": {
-    "DJANGO_VERSION": "5.0"
-  }
+  ]
 }

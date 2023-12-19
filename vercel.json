@@ -1,8 +1,10 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "lettfaktura/wsgi.py",
-      "use": "@vercel/python"
+      "src": "lettfaktura",
+      "use": "@vercel/python",
+      "config": { "pythonVersion": "3.11.2" }
     }
   ],
   "routes": [
@@ -10,5 +12,8 @@
       "src": "/(.*)",
       "dest": "lettfaktura/wsgi.py"
     }
-  ]
+  ],
+  "env": {
+    "DJANGO_VERSION": "5.0"
+  }
 }

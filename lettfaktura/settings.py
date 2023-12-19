@@ -28,10 +28,9 @@ SECRET_KEY = 'django-insecure-^@7w+61vn+@#e3%rf29wn%4r8_v$a4_*r=t19#lym5(b@z7vtx
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://lettfaktura-two.vercel.app",
-    'https://lettfaktura-cryptoninja1210.vercel.app'
+    "lettfaktura-two.vercel.app",
+    'lettfaktura-cryptoninja1210.vercel.app',
 ]
-
 
 # Application definition
 

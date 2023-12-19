@@ -4,23 +4,24 @@
     {
       "src": "lettfaktura/wsgi.py",
       "use": "@vercel/python",
-      "config": { "pythonVersion": "3.11.2" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.2" }
     },
     {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "pythonVersion": "3.11.2"
+        "distDir": "staticfiles_build"
       }
     }
   ],
   "routes": [
     {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "lettfaktura/wsgi.py"
     }
-  ],
-  "env": {
-    "DJANGO_VERSION": "4.2.8"
-  }
+  ]
 }

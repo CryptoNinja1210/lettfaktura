@@ -2,12 +2,23 @@
   "version": 2,
   "builds": [
     {
-      "src": "lettfaktura",
+      "src": "lettfaktura/wsgi.py",
       "use": "@vercel/python",
       "config": { "pythonVersion": "3.11.2" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles"
+      }
     }
   ],
   "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "lettfaktura/wsgi.py"

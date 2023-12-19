@@ -10,7 +10,7 @@
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "staticfiles_build"
+        "distDir": "ui/staticfiles"
       }
     }
   ],
@@ -24,5 +24,5 @@
       "dest": "lettfaktura/wsgi.py"
     }
   ],
-  "outputDirectory": "staticfiles_build"
+  "outputDirectory": "ui/staticfiles"
 }

@@ -27,7 +27,10 @@ SECRET_KEY = 'django-insecure-^@7w+61vn+@#e3%rf29wn%4r8_v$a4_*r=t19#lym5(b@z7vtx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://lettfaktura-two.vercel.app",
+    'https://lettfaktura-cryptoninja1210.vercel.app'
+]
 
 
 # Application definition
@@ -47,9 +50,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     "127.0.0.1",
     ".vercel.app",
-    ".now.sh",
-    "https://lettfaktura-two.vercel.app",
-    'https://lettfaktura-cryptoninja1210.vercel.app'
+    ".now.sh"
 ]
 
 CORS_ALLOW_METHODS = (

@@ -14,11 +14,9 @@ def insert_pro(request):
         Desc    = request.POST['desc']
         data    = Product(name=Name, inPrice=InPrice, price=Price, stock=Stock, desc=Desc)
         data.save()
-  
         return redirect('show/')
     else:
         return render(request, 'insert.html')
-    
 def show_pro(request):
     products    = Product.objects.all()
     data = serialize("json", products, fields=('name', 'inPrice', 'price', 'stock', 'desc'))
@@ -35,7 +33,7 @@ def edit_pro(request,pk):
         product.price   = request.POST['price']
         product.stock   = request.POST['stock']
         product.desc    = request.POST['desc']
-        product.save()   
+        product.save()
         return redirect('/show')
     context = {
         'product': product,

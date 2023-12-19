@@ -112,10 +112,10 @@ WSGI_APPLICATION = 'lettfaktura.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bsrqxcxh',
-        'USER': 'bsrqxcxh',
-        'PASSWORD': '6si7W3UGxgTdurCfd6RA0TMCBn2l2jqS',
-        'HOST': 'postgres://bsrqxcxh:6si7W3UGxgTdurCfd6RA0TMCBn2l2jqS@bubble.db.elephantsql.com/bsrqxcxh',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'qwgBNaLe3jC0',
+        'HOST': 'postgres://default:qwgBNaLe3jC0@ep-curly-lake-62167937-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
         'PORT': '',
     }
 }

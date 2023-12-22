@@ -49,7 +49,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     "127.0.0.1",
     ".vercel.app",
-    ".now.sh"
+    ".now.sh",
+    'https://sow-react15-javascript-2.vercel.app/'
 ]
 
 CORS_ALLOW_METHODS = (

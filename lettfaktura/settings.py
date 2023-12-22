@@ -113,7 +113,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'verceldb',
-        'USER': 'myprojectuser',
+        'USER': 'default',
         'PASSWORD': 'qwgBNaLe3jC0',
         'HOST': 'ep-curly-lake-62167937-pooler.us-east-1.postgres.vercel-storage.com',
         'PORT': '',
